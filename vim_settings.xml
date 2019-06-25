@@ -1,0 +1,52 @@
+<application>
+  <component name="VimSettings">
+    <state version="4" enabled="true" />
+    <globalmarks />
+    <filemarks>
+      <file name="$USER_HOME$/IdeaProjects/Time3/src/com/company/Main.java" timestamp="1558344282794">
+        <mark key="'" line="43" column="8" />
+        <mark key="[" line="17" column="7" />
+        <mark key="]" line="17" column="7" />
+        <mark key="." line="17" column="7" />
+      </file>
+      <file name="/Dummy.txt" timestamp="1561469016637">
+        <mark key="[" line="0" column="0" />
+      </file>
+      <file name="$USER_HOME$/IdeaProjects/Date/src/Date.java" timestamp="1557480220400">
+        <mark key="[" line="35" column="0" />
+      </file>
+      <file name="$USER_HOME$/IdeaProjects/Sergey test 1/src/com/company/Main.java" timestamp="1556123342170">
+        <mark key="[" line="6" column="4" />
+      </file>
+      <file name="/fragment.java" timestamp="1558344355794">
+        <mark key="[" line="0" column="0" />
+      </file>
+    </filemarks>
+    <jumps>
+      <jump line="32" column="55" filename="$USER_HOME$/IdeaProjects/Time3/src/com/company/Main.java" />
+      <jump line="34" column="8" filename="$USER_HOME$/IdeaProjects/Time3/src/com/company/Main.java" />
+    </jumps>
+    <registers>
+      <register name="1" type="2">
+        <text encoding="base64">ICAgICAgICBMb2NhbGVbXSBsb2NhbGVzID0gTG9jYWxlLmdldEF2YWlsYWJsZUxvY2FsZXMoKTsK</text>
+      </register>
+      <register name="&quot;" type="4">
+        <text>/</text>
+      </register>
+      <register name="-" type="4">
+        <text>/</text>
+      </register>
+    </registers>
+    <search>
+      <last-dir>0</last-dir>
+      <show-last>false</show-last>
+    </search>
+    <history>
+      <history-search />
+      <history-cmd />
+      <history-expr />
+      <history-input />
+    </history>
+    <shortcut-conflicts />
+  </component>
+</application>

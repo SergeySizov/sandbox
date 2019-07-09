@@ -15,6 +15,7 @@
       <file name="$USER_HOME$/IdeaProjects/Date/src/Date.java" timestamp="1557480220400">
         <mark key="[" line="35" column="0" />
       </file>
+      <file name="$USER_HOME$/IdeaProjects/sandbox-SergeyTest2/sandbox/addressbook-web-tests/src/test/java/ua/stqa/pft/addressbook/ContactCreation1.java" timestamp="1562662507816" />
       <file name="$USER_HOME$/IdeaProjects/Sergey test 1/src/com/company/Main.java" timestamp="1556123342170">
         <mark key="[" line="6" column="4" />
       </file>
@@ -29,6 +30,9 @@
     <registers>
       <register name="1" type="2">
         <text encoding="base64">ICAgICAgICBMb2NhbGVbXSBsb2NhbGVzID0gTG9jYWxlLmdldEF2YWlsYWJsZUxvY2FsZXMoKTsK</text>
+      </register>
+      <register name="q" type="4">
+        <text />
       </register>
       <register name="&quot;" type="4">
         <text>/</text>

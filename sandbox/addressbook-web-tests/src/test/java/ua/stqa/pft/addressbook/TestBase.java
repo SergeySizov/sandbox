@@ -71,6 +71,32 @@ public class TestBase {
         wd.findElement(By.linkText("groups")).click();
     }
 
+    public void rturntoGroupPage(By groups) {
+        wd.findElement(groups).click();
+    }
+
+    public void submitGroupCreation(String submit) {
+        wd.findElement(By.name(submit)).click();
+    }
+
+    public void fillGroupForm(GroupData groupData) {
+        wd.findElement(By.name("group_name")).click();
+        wd.findElement(By.name("group_name")).clear();
+        wd.findElement(By.name("group_name")).sendKeys(groupData.getName());
+        wd.findElement(By.name("group_header")).clear();
+        wd.findElement(By.name("group_header")).sendKeys(groupData.getHeader());
+        wd.findElement(By.name("group_footer")).clear();
+        wd.findElement(By.name("group_footer")).sendKeys(groupData.getFooter());
+    }
+
+    public void initGroupCreation(String s) {
+        wd.findElement(By.name(s)).click();
+    }
+
+    public void gotoGrouppage(By groups) {
+        wd.findElement(groups).click();
+    }
+
     @AfterMethod(alwaysRun = true)
     public void tearDown() {
         wd.quit();
@@ -85,6 +111,14 @@ public class TestBase {
         }
     }
 
+    public void deleteSelectedGroups() {
+        wd.findElement(By.name("delete")).click();
+    }
+
+    public void selectGroup() {
+        wd.findElement(By.name("selected[]")).click();
+    }
+
     public boolean isAlertPresent() {
         try {
             wd.switchTo().alert();
@@ -92,13 +126,5 @@ public class TestBase {
         } catch (NoAlertPresentException e) {
             return false;
         }
-    }
-
-    public void deleteSelectedGroups() {
-        wd.findElement(By.name("delete")).click();
-    }
-
-    public void selectGroup() {
-        wd.findElement(By.name("selected[]")).click();
     }
 }

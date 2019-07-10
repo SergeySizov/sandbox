@@ -1,10 +1,15 @@
 package ua.stqa.pft.addressbook;
 
-import org.testng.annotations.*;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 
-public class GroupeCreationTests {
+public class GroupeCreationTests extends TestBase{
     private WebDriver wd;
 
 
@@ -15,7 +20,7 @@ public class GroupeCreationTests {
         login("admin", "secret");
     }
 
-    private void login(String username, String password) {
+    public void login(String username, String password) {
         wd.findElement(By.name("user")).click();
         wd.findElement(By.name("user")).clear();
         wd.findElement(By.name("user")).sendKeys(username);
@@ -34,15 +39,15 @@ public class GroupeCreationTests {
 
     }
 
-    private void rturntoGroupPage(By groups) {
+    public void rturntoGroupPage(By groups) {
         wd.findElement(groups).click();
     }
 
-    private void submitGroupCreation(String submit) {
+    public void submitGroupCreation(String submit) {
         wd.findElement(By.name(submit)).click();
     }
 
-    private void fillGroupForm(GroupData groupData) {
+    public void fillGroupForm(GroupData groupData) {
         wd.findElement(By.name("group_name")).click();
         wd.findElement(By.name("group_name")).clear();
         wd.findElement(By.name("group_name")).sendKeys(groupData.getName());
@@ -52,11 +57,11 @@ public class GroupeCreationTests {
         wd.findElement(By.name("group_footer")).sendKeys(groupData.getFooter());
     }
 
-    private void initGroupCreation(String s) {
+    public void initGroupCreation(String s) {
         wd.findElement(By.name(s)).click();
     }
 
-    private void gotoGrouppage(By groups) {
+    public void gotoGrouppage(By groups) {
         wd.findElement(groups).click();
     }
 
@@ -65,7 +70,7 @@ public class GroupeCreationTests {
         wd.quit();
     }
 
-    private boolean isElementPresent(By by) {
+    public boolean isElementPresent(By by) {
         try {
             wd.findElement(by);
             return true;
@@ -74,7 +79,7 @@ public class GroupeCreationTests {
         }
     }
 
-    private boolean isAlertPresent() {
+    public boolean isAlertPresent() {
         try {
             wd.switchTo().alert();
             return true;

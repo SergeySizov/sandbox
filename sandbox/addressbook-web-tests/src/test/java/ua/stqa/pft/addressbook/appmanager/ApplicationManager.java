@@ -1,4 +1,4 @@
-package ua.stqa.pft.addressbook;
+package ua.stqa.pft.addressbook.appmanager;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoAlertPresentException;
@@ -6,15 +6,17 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
+import ua.stqa.pft.addressbook.model.GroupData;
+import ua.stqa.pft.addressbook.tests.fillCreateform;
 
-public class TestBase {
+import java.util.concurrent.TimeUnit;
+
+public class ApplicationManager {
     private WebDriver wd;
 
-    @BeforeMethod(alwaysRun = true)
-    public void setUp() {
+    public void init() {
         wd = new FirefoxDriver();
+        wd.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
         wd.get("http://localhost/addressbook/");
         login("admin", "secret");
     }
@@ -67,6 +69,7 @@ public class TestBase {
     public void gotoContactPage(String s) {
         wd.findElement(By.linkText(s)).click();
     }
+
     public void gotoGroupPage() {
         wd.findElement(By.linkText("groups")).click();
     }
@@ -97,8 +100,7 @@ public class TestBase {
         wd.findElement(groups).click();
     }
 
-    @AfterMethod(alwaysRun = true)
-    public void tearDown() {
+    public void stop() {
         wd.quit();
     }
 

@@ -1,4 +1,4 @@
-package ua.stqa.pft.addressbook;
+package ua.stqa.pft.addressbook.tests;
 
 public class fillCreateform {
     private final String field1;

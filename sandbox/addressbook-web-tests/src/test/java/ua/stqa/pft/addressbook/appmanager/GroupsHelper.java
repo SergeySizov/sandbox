@@ -12,12 +12,13 @@ public class GroupsHelper {
         this.wd = wd;
     }
 
-    public void rturntoGroupPage(By groups) {
-        wd.findElement(groups).click();
+    public void returntoGroupPage() {
+        wd.findElement(By.name("group_name")).click();
+
     }
 
-    public void submitGroupCreation(String submit) {
-        wd.findElement(By.name(submit)).click();
+    public void submitGroupCreation() {
+        wd.findElement(By.name("submit")).click();
     }
 
     public void fillGroupForm(GroupData groupData) {
@@ -30,8 +31,8 @@ public class GroupsHelper {
         wd.findElement(By.name("group_footer")).sendKeys(groupData.getFooter());
     }
 
-    public void initGroupCreation(String s) {
-        wd.findElement(By.name(s)).click();
+    public void initGroupCreation() {
+        wd.findElement(By.name("new")).click();
     }
 
     public void deleteSelectedGroups() {

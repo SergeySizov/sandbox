@@ -10,15 +10,11 @@ import org.openqa.selenium.firefox.FirefoxDriver;
         this.wd = wd;
     }
 
-    public void gotoContactPage(String s) {
-        wd.findElement(By.linkText(s)).click();
+    public void gotoContactPage() {
+        wd.findElement(By.linkText("add new")).click();
     }
 
-    public void gotoGroupPage() {
+        public void gotoGroupPage() {
         wd.findElement(By.linkText("groups")).click();
-    }
-
-    public void gotoGrouppage(By groups) {
-        wd.findElement(groups).click();
     }
 }

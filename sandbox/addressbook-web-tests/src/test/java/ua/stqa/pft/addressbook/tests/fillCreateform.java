@@ -21,26 +21,26 @@ public class fillCreateform {
     private final String field18;
     private final String field19;
 
-    public fillCreateform(String field1, String field2, String field3, String field4, String field5, String field6, String field7, String field8, String field9, String field10, String field11, String field12, String field13, String field14, String field15, String field16, String field17, String field18, String field19) {
-        this.field1 = field1;
-        this.field2 = field2;
-        this.field3 = field3;
-        this.field4 = field4;
-        this.field5 = field5;
-        this.field6 = field6;
-        this.field7 = field7;
-        this.field8 = field8;
-        this.field9 = field9;
-        this.field10 = field10;
-        this.field11 = field11;
-        this.field12 = field12;
-        this.field13 = field13;
-        this.field14 = field14;
-        this.field15 = field15;
-        this.field16 = field16;
-        this.field17 = field17;
-        this.field18 = field18;
-        this.field19 = field19;
+    public fillCreateform(String First_name, String Middle_name, String Last_name, String Nickname, String Company, String Title, String Address, String Home, String Mobile, String Work, String E_mail, String Homepage, String BirthdayD, String BirthdayM, String BirthdayY, String AnniversaryD, String AnniversaryM, String AnniversaryY, String Incognito) {
+        this.field1 = First_name;
+        this.field2 = Middle_name;
+        this.field3 = Last_name;
+        this.field4 = Nickname;
+        this.field5 = Company;
+        this.field6 = Title;
+        this.field7 = Address;
+        this.field8 = Home;
+        this.field9 = Mobile;
+        this.field10 = Work;
+        this.field11 = E_mail;
+        this.field12 = Homepage;
+        this.field13 = BirthdayD;
+        this.field14 = BirthdayM;
+        this.field15 = BirthdayY;
+        this.field16 = AnniversaryD;
+        this.field17 = AnniversaryM;
+       this.field18 = AnniversaryY;
+       this.field19 = Incognito;
     }
 
     public String getField1() {

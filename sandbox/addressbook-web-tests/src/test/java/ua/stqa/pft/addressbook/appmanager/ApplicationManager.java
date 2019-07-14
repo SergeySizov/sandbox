@@ -27,7 +27,7 @@ public class ApplicationManager {
     }
 
     public void save(String s) {
-        wd.findElement(By.xpath(s)).click();
+        wd.findElement(By.name("Enter")).click();
     }
 
     public void stop() {
@@ -65,5 +65,9 @@ public class ApplicationManager {
     }
     public TestData getTestData() {
         return testData;
+    }
+
+    public void save() {
+
     }
 }
